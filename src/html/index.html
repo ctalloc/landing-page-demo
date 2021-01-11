@@ -4,52 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    Anonymous Proxy
+    <header class="header">
+      <nav class="header__nav"><img src="./assets/images/ico-menu.svg" alt="Icono navegador" class="header__nav__icon"></nav>
+      <div class="header__container">
+        <h1 class="header__title">Anonymous Proxy</h1>
+        <h4 class="header__subtitle">In hac habitasse platea dictumst.</h4>
+        <button class="header__button"><img src="./assets/images/ico-scroll-down.svg" alt="Icono Scroll Down" class="header__button_icon"></button>
+      </div>
+    </header>
 
-    In hac habitasse platea dictumst.
-
-    Insomnia tips
-
-    Looking through a window
-
-    Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.
-
-    Go
-
-    3 reasons to purchase
-
-    Ut sed metus
-    Lorem ipsum dolor sit amet, consecteur.
-
-    Curabitur ac erat
-    Mauris mattis urna quis lorem molestie.
-
-    Morbi dictumst
-    Aliquam in dolor et doloc tincidunt.
-
-    More reasons
-
-    Articles
-    Books
-    Events
-    Reasons
-    Tips 
-
-    Twitter
-    Instagram
-    Mastodon.social
-
-    &copy;2021
-
-    we&hearts;components
+    <main class="main__container">
+      <section class="main__item main__item__one">
+        <h4 class="main__item--subtitle">Insomnia tips</h4>
+        <h2 class="main__item--title main__item__one--title">
+          Looking through a window
+        </h2>
+        <p class="main__item--text main__item__one--text">
+          Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis,
+          at luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+        </p>
+        <button class="main__item--button main__item__one--button">Go</button>
+      </section>
+      <section class="main__item main__item--two">
+        <h2 class="main__item--title main__item__two--title">
+          3 reasons to purchase
+        </h2>
+        <article class="article">
+          <h3 class="article__title">Ut sed metus</h3>
+          <p class="article__text">Lorem ipsum dolor sit amet, consecteur.</p>
+        </article>
+        <article class="article">
+          <h3 class="article__title">Curabitur ac erat</h3>
+          <p class="article__text">Mauris mattis urna quis lorem molestie.</p>
+        </article>
+        <article class="article">
+          <h3 class="article__title">Morbi dictum</h3>
+          <p class="article__text">Aliquam in dolor et doloc tincidunt.</p>
+        </article>
+        <button main__item--button main__item__two--button>More reasons</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__item">
+        <nav class="item__nav">
+          <ul class="nav__list">
+            <li>Articles</li>
+            <li>Books</li>
+            <li>Events</li>
+            <li>Reasons</li>
+            <li>Tips</li>
+          </ul>
+        </nav>
+      </div>
+        <nav class="item__nav">
+          <ul class="nav__list">
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Mastodon.social</li>
+        </nav>
+      <div class="footer__item">
+        <small>&copy;2021</small>
+        <small>we&hearts;components</small>
+      </div>
+    </footer>
 
     <script src="./assets/js/main.js"></script>
   </body>
