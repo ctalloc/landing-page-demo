@@ -6,7 +6,6 @@
         height: 44px;
         width: 44px;
         background-color:#0271bc;
-        text-align: center;
         &__icon {
             padding: 15px 14px 15px 14px;
         }
@@ -56,7 +55,6 @@
             width: 45px;
             border: 0;
             border-radius: 50%;
-            text-align: center;
             padding-top: 4px;
             margin-bottom: 53px;
             @include desktop {

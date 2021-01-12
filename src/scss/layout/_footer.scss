@@ -57,6 +57,10 @@
   padding-top: 45px;
   padding-bottom: 30px;
   position: relative;
+  @include tablet {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   &__item {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -86,7 +90,6 @@
   }
   33% {
     transform: scale(1.2);
-    opacity: 100%;
   }
   66% {
     transform: scale(1);

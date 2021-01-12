@@ -17,10 +17,8 @@
     }
   }
   &--title {
-    font-size: 24px;
     line-height: 30px;
     font-family: $font-slab;
-    font-weight: bold;
     color: $black;
     text-transform: capitalize;
     @include tablet {
@@ -102,7 +100,6 @@
       text-align: center;
       margin-top: 30px;
       margin-bottom: 45px;
-      line-height: 30px;
       @include tablet {
         line-height: 45px;
       }
@@ -181,7 +178,6 @@
   &__title {
     font-family: $font-slab;
     font-size: 18px;
-    font-weight: bold;
     line-height: 30px;
     @include tablet {
         font-size: 24px;
@@ -192,7 +188,6 @@
     font-family: $font-main;
     font-size: 18px;
     font-weight: normal;
-    text-align: center;
     line-height: 30px;
     @include tablet {
       font-size: 20px;
