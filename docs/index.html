@@ -17,11 +17,11 @@
 
   <body>
     <header class="header">
-      <nav class="header__nav"><img src="./assets/images/ico-menu.svg" alt="Icono navegador" class="header__nav__icon"></nav>
-      <div class="header__container">
-        <h1 class="header__title"><span class="header__title--span">Anonymous</span> <span class="header__title--span">Proxy</span></h1>
-        <h4 class="header__subtitle">In hac habitasse platea dictumst.</h4>
-        <button class="header__button"><img src="./assets/images/ico-scroll-down.svg" alt="Icono Scroll Down" class="header__button_icon"></button>
+      <nav class="header__nav"><a class="adalablink" href="https://adalab.es/" target="_blank"><img src="./assets/images/ico-menu.svg" alt="Icono navegador" class="header__nav__icon"></a></nav>
+      <div id="hero" class="header__hero">
+        <h1 class="header__hero__title"><span class="header__hero__title--span">Anonymous</span> <span class="header__hero__title--span">Proxy</span></h1>
+        <h4 class="header__hero__subtitle">In hac habitasse platea dictumst.</h4>
+        <button class="header__hero__button"><a href="#3reasons"><img src="./assets/images/ico-scroll-down.svg" alt="Icono Scroll Down" class="header__hero__button_icon"></a></button>
       </div>
     </header>
 
@@ -41,7 +41,7 @@
       </section>
       <section class="main__item main__item__two">
         <div class="main__item--centralcolumn grid">
-          <h2 class="main__item--title main__item__two--title grid__item1">
+          <h2 id="3reasons" class="main__item--title main__item__two--title grid__item1">
             3 reasons to purchase
           </h2>
           <article class="article grid__item2">
@@ -61,26 +61,33 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__item">
-        <nav class="item__nav">
-          <ul class="nav__list">
-            <li>Articles</li>
-            <li>Books</li>
-            <li>Events</li>
-            <li>Reasons</li>
-            <li>Tips</li>
+      <div class="footer__magicContainer"><button class="footer__button"><a href="#hero"><img src="./assets/images/ico-arrow.svg" alt="Icono Scroll Down" class="header__button_icon"></a></button></div>
+      <div class="footer__container">
+        <div class="footer__item footer__item--one">
+          <nav class="footer__item__nav">
+            <ul class="footer__item__nav__list">
+              <li><a class="link" target="_blank" href="https://adalab.es/">Articles</a></li>
+              <li><a class="link" target="_blank" href="https://adalab.es/">Books</a></li>
+              <li><a class="link" target="_blank" href="https://adalab.es/">Events</a></li>
+              <li><a class="link" target="_blank" href="https://adalab.es/">Reasons</a></li>
+              <li><a class="link" target="_blank" href="https://adalab.es/">Tips</a></li>
+            </ul>
+          </nav>
+        </div>
+          <div class="footer__item footer__item--two">
+            <nav class="footer__item__nav">
+              <ul class="footer__item__nav__list">
+                <li><a class="link" target="_blank" href="https://adalab.es/">Twitter</a></li>
+                <li><a class="link" target="_blank" href="https://adalab.es/">Instagram</a></li>
+                <li><a class="link" target="_blank" href="https://adalab.es/">Mastodon.social</a></li>
+            </nav>
+          </div>
+        <div class="footer__item footer__item--three">
+          <ul class="footer__item__list">
+            <li><small>&copy;2021</small></li>
+            <li><small>we <span class="small__icon">❤</span> components</small></li>
           </ul>
-        </nav>
-      </div>
-        <nav class="item__nav">
-          <ul class="nav__list">
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Mastodon.social</li>
-        </nav>
-      <div class="footer__item">
-        <small>&copy;2021</small>
-        <small>we&hearts;components</small>
+        </div>
       </div>
     </footer>
 
