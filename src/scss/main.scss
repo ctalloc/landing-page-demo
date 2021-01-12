@@ -7,51 +7,61 @@
 @import "layout/footer";
 @import "pages/index";
 
-.main__container {
-  position: relative;
+//footer general
+
+.footer {
+    background-color: $dark-grey-blue;
+    &__container {
+    color: $white;
+    font-family: $font-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    &__item {
+        text-align: center;
+        &__nav {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.88;
+        }
+        &__list {
+            font-size: 14px;
+            line-height: 2.14;
+        }
+    }
+    
 }
-.main__item { 
-  &--centralcolumn {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  &--title {
-      font-size: 24px;
-      font-family: $font-slab;
-      font-weight: bold;
-      color: $black;
-  }
-  &--button {
-      border-radius: 22.5px;
-      font-size: 20px;
-      font-family: $font-main;
-  }
-  &__one--button {
-      width: 76px;
-      height: 45px;
-      margin-top: 30px;
-      margin-bottom: 45px;
-      color: $orange;
-      border: solid 2px $orange;
-      background-color: $white;
-  }
-  &__one--title {
-      margin-top: 1px;
-  }
-  &--subtitle {
-      color: $light-blue;
-      font-family: $font-main;
-      font-size: 14px;
-      font-weight: normal;
-      margin-top: 30px;
-  }
-  &--text {
-      font-family: $font-main;
-      font-size: 18px;
-      color: $greyish-brown;
-      margin-top: 15px;
-  }
-  &__two {
-    background-color: $ice-blue;
-  }
-}
+ //footer margins
+
+ .footer {
+     padding-top: 45px;
+     padding-bottom: 30px;
+     position: relative;
+     &__item {
+         margin-top: 15px;
+         margin-bottom: 15px;
+     }
+ }
+
+ //button
+ .footer__magicContainer {
+    text-align: center;
+    position: absolute;
+    top: -22px;
+    width: 100%;
+ }
+ .footer__button {
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: $white;
+ }
+
+ //heart
+
+ .small__icon {
+     color: $orange;
+ }
