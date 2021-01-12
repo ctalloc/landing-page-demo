@@ -1,105 +1,143 @@
+//general
 .main__container {
-    position: relative;
+  position: relative;
+}
+.main__item {
+  &--centralcolumn {
+    margin-left: 15px;
+    margin-right: 15px;
+    @include tablet {
+      margin-left: 39px;
+      margin-right: 39px;
+    }
   }
-  .main__item { 
-    &--centralcolumn {
-      margin-left: 15px;
-      margin-right: 15px;
-      @include tablet {
-        margin-left: 39px;
-        margin-right: 39px;
+  &--title {
+    font-size: 24px;
+    font-family: $font-slab;
+    font-weight: bold;
+    color: $black;
+    text-transform: capitalize;
+  }
+  &--button {
+    border-radius: 22.5px;
+    font-size: 20px;
+    font-family: $font-main;
+    font-weight: 500;
+  }
+  // item one specific styles
+  &__one--button {
+    width: 76px;
+    height: 45px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    color: $orange;
+    border: solid 2px $orange;
+    background-color: $white;
+    @include tablet {
+      margin-bottom: 60px;
     }
+  }
+  &__one--title {
+    margin-top: 1px;
+    @include tablet {
+      margin-top: 0px;
     }
+  }
+  &--subtitle {
+    color: $light-blue;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 30px;
+  }
+  &--text {
+    font-family: $font-main;
+    font-size: 18px;
+    color: $greyish-brown;
+    margin-top: 15px;
+    @include tablet {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  }
+  // item two specific styles
+  &__two {
+    background-color: $ice-blue;
     &--title {
-        font-size: 24px;
-        font-family: $font-slab;
-        font-weight: bold;
-        color: $black;
-        text-transform: capitalize;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 45px;
+      line-height: 45px;
     }
     &--button {
-        border-radius: 22.5px;
-        font-size: 20px;
-        font-family: $font-main;
-        font-weight: 500;
-    }
-    &__one--button {
-        width: 76px;
-        height: 45px;
-        margin-top: 30px;
-        margin-bottom: 45px;
-        color: $orange;
-        border: solid 2px $orange;
-        background-color: $white;
-        @include tablet {
-            margin-bottom: 60px;
-        }
-    }
-    &__one--title {
-        margin-top: 1px;
-        @include tablet {
-            margin-top: 0px;
-        }
-    }
-    &--subtitle {
-        color: $light-blue;
-        font-family: $font-main;
-        font-size: 14px;
-        font-weight: normal;
-        margin-top: 30px;
-    }
-    &--text {
-        font-family: $font-main;
-        font-size: 18px;
-        color: $greyish-brown;
-        margin-top: 15px;
-        @include tablet {
-            font-size: 20px;
-            margin-top: 30px;
-        }
-    }
-    &__two {
-      background-color: $ice-blue;
-      &--title{
-          text-align: center;
-          margin-top: 30px;
-          margin-bottom: 45px;
-      }
-      &--button {
-          width: 184px;
-          height: 45px;
-          margin-right: auto;
-          margin-left: auto;
-          border: 0;
-          background-color: $orange;
-          color: $white;
+      width: 184px;
+      height: 45px;
+      margin-right: auto;
+      margin-left: auto;
+      border: 0;
+      background-color: $orange;
+      color: $white;
+      @include tablet {
+        margin-top: 60px;
+        margin-bottom: 60px;
       }
     }
   }
-  .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 105px 138px 138px 138px 105px;
-      &__item1 {
-          grid-row: span 1;
-      }
-      .article {
-          grid-row: span 1;
-      }
+}
+//grid and grid media queries
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 105px 138px 138px 138px 105px;
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 1fr 165px;
+    column-gap: 27.7px;
+  }
+  &__item1 {
+    grid-row: span 1;
+    @include tablet {
+      grid-column: span 3;
+    }
   }
   .article {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      width: 184px;
-      &__title {
-          font-family: $font-slab;
-          font-size: 18px;
-          font-weight: bold;
-      }
-      &__text {
-          font-family: $font-main;
-          font-size: 18px;
-          font-weight: normal;
+    grid-row: span 1;
+    @include tablet {
+      grid-column: span 1;
+    }
+  }
+  &__item5 {
+    grid-row: span 1;
+    @include tablet {
+      grid-column: 1 / 4;
+    }
+  }
+}
+//article specific styles
+.article {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 184px;
+  @include tablet {
+    width: 100%;
+    margin: 0;
+  }
+  &__title {
+    font-family: $font-slab;
+    font-size: 18px;
+    font-weight: bold;
+    @include tablet {
+        font-size: 24px;
+        margin-bottom: 14px;
       }
   }
+  &__text {
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: normal;
+    @include tablet {
+        font-size: 20px;
+      }
+  }
+}
