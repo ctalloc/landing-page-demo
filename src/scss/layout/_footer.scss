@@ -49,15 +49,18 @@
   border-radius: 50%;
   background-color: $white;
   animation-name: clickme;
-  animation-duration: 1s;
+  animation-duration: 2.8s;
   animation-iteration-count: infinite;
 }
 @keyframes clickme {
   from {
     transform: scale(1);
   }
-  50% {
-    transform: scale(1.2);
+  33% {
+    transform: scale(1.4);
+  }
+  66% {
+    transform: scale(1);
   }
   to {
     transform: scale(1);

@@ -33,6 +33,12 @@
     color: $orange;
     border: solid 2px $orange;
     background-color: $white;
+    &:hover {
+      transition: 0.3s;
+      background-color: $orange;
+      color: $white;
+      transform: scale(1.1)
+    }
     @include tablet {
       margin-bottom: 60px;
     }
@@ -77,6 +83,13 @@
       border: 0;
       background-color: $orange;
       color: $white;
+      &:hover {
+        transition: 0.3s;
+        background-color: $white;
+        color: $orange;
+        border: solid 2px $orange;
+        transform: scale(1.05)
+      }
       @include tablet {
         margin-top: 60px;
         margin-bottom: 60px;
