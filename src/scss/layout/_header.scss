@@ -12,7 +12,7 @@
             margin-bottom: 15.5px;
         }
     }
-    &__container {
+    &__hero {
         background-image: url(".././images/cover.jpg");
         background-size: auto 100%;
         background-position: center;
@@ -22,29 +22,29 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-    }
-    &__title {
-        color: $white;
-        font-family: $font-slab;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        &--span {
-            display: block;
-            text-align: center;
+        &__title {
+            color: $white;
+            font-family: $font-slab;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            &--span {
+                display: block;
+                text-align: center;
+            }
         }
-    }
-    &__subtitle {
-        color: $white;
-        font-family: $font-main;
-        font-weight: normal;
-        margin-bottom: 45px;
-    }
-    &__button {
-        height: 45px;
-        width: 45px;
-        border-radius: 50%;
-        text-align: center;
-        margin-bottom: 53px;
+        &__subtitle {
+            color: $white;
+            font-family: $font-main;
+            font-weight: normal;
+            margin-bottom: 45px;
+        }
+        &__button {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            text-align: center;
+            margin-bottom: 53px;
+        }
     }
 }
