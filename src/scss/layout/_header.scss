@@ -32,16 +32,25 @@
                 display: block;
                 text-align: center;
             }
+            @include tablet {
+                font-size: 80px;
+                margin-bottom: 20px;
+            }
         }
         &__subtitle {
             color: $white;
             font-family: $font-main;
             font-weight: normal;
             margin-bottom: 45px;
+            @include tablet {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
         }
         &__button {
             height: 45px;
             width: 45px;
+            border: 0;
             border-radius: 50%;
             text-align: center;
             margin-bottom: 53px;

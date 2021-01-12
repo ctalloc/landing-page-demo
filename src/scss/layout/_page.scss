@@ -5,6 +5,10 @@
     &--centralcolumn {
       margin-left: 15px;
       margin-right: 15px;
+      @include tablet {
+        margin-left: 39px;
+        margin-right: 39px;
+    }
     }
     &--title {
         font-size: 24px;
@@ -27,9 +31,15 @@
         color: $orange;
         border: solid 2px $orange;
         background-color: $white;
+        @include tablet {
+            margin-bottom: 60px;
+        }
     }
     &__one--title {
         margin-top: 1px;
+        @include tablet {
+            margin-top: 0px;
+        }
     }
     &--subtitle {
         color: $light-blue;
@@ -43,6 +53,10 @@
         font-size: 18px;
         color: $greyish-brown;
         margin-top: 15px;
+        @include tablet {
+            font-size: 20px;
+            margin-top: 30px;
+        }
     }
     &__two {
       background-color: $ice-blue;
