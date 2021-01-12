@@ -10,6 +10,11 @@
       margin-left: 40px;
       margin-right: 40px;
     }
+    @include desktop {
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &--title {
     font-size: 24px;
@@ -17,6 +22,12 @@
     font-weight: bold;
     color: $black;
     text-transform: capitalize;
+    @include tablet {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
   }
   &--button {
     border-radius: 22.5px;
@@ -25,6 +36,13 @@
     font-weight: 500;
   }
   // item one specific styles
+  &__one {
+    @include desktop {
+      max-width: 730px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   &__one--button {
     width: 76px;
     height: 45px;
@@ -40,7 +58,11 @@
       transform: scale(1.1)
     }
     @include tablet {
+      width: 91px;
       margin-bottom: 60px;
+    }
+    @include desktop {
+      width: 160px;
     }
   }
   &__one--title {
@@ -55,6 +77,9 @@
     font-size: 14px;
     font-weight: normal;
     margin-top: 30px;
+    @include desktop {
+      margin-top: 60px;
+    }
   }
   &--text {
     font-family: $font-main;
