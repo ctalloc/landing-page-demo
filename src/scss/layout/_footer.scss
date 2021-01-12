@@ -8,9 +8,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablet {
+      margin-left: 40px;
+      margin-right: 40px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
   }
+
   &__item {
     text-align: center;
+    @include tablet {
+      text-align: left;
+    }
     &__nav {
       text-transform: uppercase;
       font-size: 16px;
@@ -23,6 +34,16 @@
     }
   }
 }
+
+//footer flexbox items order
+
+.footer__item--two,
+.footer__item--one {
+  @include tablet {
+    order: 2;
+  }
+}
+
 //footer margins
 
 .footer {
@@ -49,7 +70,7 @@
   border-radius: 50%;
   background-color: $white;
   animation-name: clickme;
-  animation-duration: 2.8s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 @keyframes clickme {
@@ -57,7 +78,8 @@
     transform: scale(1);
   }
   33% {
-    transform: scale(1.4);
+    transform: scale(1.2);
+    opacity: 100%;
   }
   66% {
     transform: scale(1);
