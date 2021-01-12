@@ -36,6 +36,10 @@
                 font-size: 80px;
                 margin-bottom: 20px;
             }
+            @include desktop {
+                font-size: 100px;
+                margin-bottom: 0;
+            }
         }
         &__subtitle {
             color: $white;
@@ -43,7 +47,7 @@
             font-weight: normal;
             margin-bottom: 45px;
             @include tablet {
-                font-size: 30px;
+                font-size: 24px;
                 margin-bottom: 30px;
             }
         }
@@ -54,6 +58,9 @@
             border-radius: 50%;
             text-align: center;
             margin-bottom: 53px;
+            @include desktop {
+                margin-bottom: 13px;
+            }
         }
     }
 }
