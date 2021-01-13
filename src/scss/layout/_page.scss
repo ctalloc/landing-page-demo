@@ -30,12 +30,6 @@ position: relative;
       font-size: 32px;
     }
   }
-  &--button {
-    border-radius: 22.5px;
-    font-size: 20px;
-    font-family: $font-main;
-    font-weight: 500;
-  }
   // item one specific styles
   &__one {
     @include desktop {
@@ -45,13 +39,11 @@ position: relative;
     }
   }
   &__one--button {
+    @include linkButton($white,$orange)
     width: 76px;
-    height: 45px;
     margin-top: 30px;
     margin-bottom: 45px;
-    color: $orange;
     border: solid 2px $orange;
-    background-color: $white;
     &:hover {
       transition: 0.3s;
       background-color: $orange;
@@ -105,13 +97,11 @@ position: relative;
       }
     }
     &--button {
+      @include linkButton($orange,$white)
       width: 184px;
-      height: 45px;
       margin-right: auto;
       margin-left: auto;
       border: 0;
-      background-color: $orange;
-      color: $white;
       &:hover {
         transition: 0.3s;
         background-color: $white;
