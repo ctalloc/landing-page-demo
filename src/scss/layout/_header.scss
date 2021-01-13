@@ -46,10 +46,7 @@
             }
         }
         &__button {
-            height: 45px;
-            width: 45px;
-            border: 0;
-            border-radius: 50%;
+            @include scrollButton;
             padding-top: 4px;
             margin-bottom: 53px;
             @include desktop {

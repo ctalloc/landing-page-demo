@@ -75,11 +75,7 @@
   width: 100%;
 }
 .footer__button {
-  height: 45px;
-  width: 45px;
-  border: none;
-  border-radius: 50%;
-  background-color: $white;
+  @include scrollButton;
   animation-name: clickme;
   animation-duration: 3s;
   animation-iteration-count: infinite;

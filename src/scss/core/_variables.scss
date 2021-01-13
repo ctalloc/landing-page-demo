@@ -44,3 +44,12 @@ $greyish-brown: #4a4a4a;
   font-weight: normal;
   // copy pasta ;) -> @include sText(,);
 }
+
+@mixin scrollButton {
+  height: 45px;
+  width: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: $white;
+  // copy pasta ;) -> @include scrollButton;
+}
