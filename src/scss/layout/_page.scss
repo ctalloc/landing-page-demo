@@ -19,8 +19,7 @@ position: relative;
     }
   }
   &--title {
-    @include sectionTitle(30px,$black)
-    line-height: 30px;
+    @include sectionTitle(30px, $black) line-height: 30px;
     text-transform: capitalize;
     @include tablet {
       font-size: 26px;
@@ -39,8 +38,7 @@ position: relative;
     }
   }
   &__one--button {
-    @include linkButton($white,$orange)
-    width: 76px;
+    @include linkButton($white, $orange) width: 76px;
     margin-top: 30px;
     margin-bottom: 45px;
     border: solid 2px $orange;
@@ -48,7 +46,7 @@ position: relative;
       transition: 0.3s;
       background-color: $orange;
       color: $white;
-      transform: scale(1.1)
+      transform: scale(1.1);
     }
     @include tablet {
       width: 91px;
@@ -65,7 +63,7 @@ position: relative;
     }
   }
   &--subtitle {
-    @include sText(14px,$light-blue);
+    @include sText(14px, $light-blue);
     margin-top: 30px;
     line-height: 30px;
     @include desktop {
@@ -74,7 +72,7 @@ position: relative;
     }
   }
   &--text {
-    @include sText(18px,$greyish-brown);
+    @include sText(18px, $greyish-brown);
     line-height: 30px;
     margin-top: 15px;
     @include tablet {
@@ -97,8 +95,7 @@ position: relative;
       }
     }
     &--button {
-      @include linkButton($orange,$white)
-      width: 184px;
+      @include linkButton($orange, $white) width: 184px;
       margin-right: auto;
       margin-left: auto;
       border: 0;
@@ -107,7 +104,7 @@ position: relative;
         background-color: $white;
         color: $orange;
         border: solid 2px $orange;
-        transform: scale(1.07)
+        transform: scale(1.07);
       }
       @include tablet {
         width: 255px;
@@ -163,16 +160,14 @@ position: relative;
     margin: 0;
   }
   &__title {
-    @include sectionTitle(18px,$black)
-    line-height: 30px;
+    @include sectionTitle(18px, $black) line-height: 30px;
     @include tablet {
-        font-size: 24px;
-        margin-bottom: 14px;
-      }
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
   }
   &__text {
-    @include sText(18px,$black)
-    line-height: 30px;
+    @include sText(18px, $black) line-height: 30px;
     @include tablet {
       font-size: 20px;
     }
