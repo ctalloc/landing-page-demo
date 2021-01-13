@@ -1,7 +1,9 @@
 //general
-.main__container {
- // position: relative;
-}
+
+/*.main__container {
+position: relative;
+}*/
+
 .main__item {
   &--centralcolumn {
     margin-left: 15px;
@@ -71,20 +73,16 @@
     }
   }
   &--subtitle {
-    color: $light-blue;
-    font-family: $font-main;
-    font-size: 14px;
-    font-weight: normal;
+    @include sText(14px,$light-blue);
     margin-top: 30px;
     line-height: 30px;
     @include desktop {
+      font-size: 16px;
       margin-top: 60px;
     }
   }
   &--text {
-    font-family: $font-main;
-    font-size: 18px;
-    color: $greyish-brown;
+    @include sText(18px,$greyish-brown);
     line-height: 30px;
     margin-top: 15px;
     @include tablet {
@@ -183,9 +181,7 @@
       }
   }
   &__text {
-    font-family: $font-main;
-    font-size: 18px;
-    font-weight: normal;
+    @include sText(18px,$black)
     line-height: 30px;
     @include tablet {
       font-size: 20px;
