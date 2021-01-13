@@ -1,6 +1,6 @@
 // fonts
-$font-main: 'Roboto', sans-serif;
-$font-slab: 'Roboto Slab', serif;
+$font-main: "Roboto", sans-serif;
+$font-slab: "Roboto Slab", serif;
 
 // colors
 $white: #ffffff;
@@ -13,21 +13,24 @@ $greyish-brown: #4a4a4a;
 
 // mixins
 
-  //mixins media queries
+//mixins media queries
 
 @mixin tablet {
-    @media screen and (min-width: 768px) {
-      @content;
-    }
+  @media screen and (min-width: 768px) {
+    @content;
   }
-  
-  @mixin desktop {
-    @media screen and (min-width: 1200px) {
-      @content;
-    }
-  }
+  // copy pasta ;) @include tablet {}
+}
 
-  //mixins style
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+  // copy pasta ;) @include desktop {}
+}
+
+//mixins style
 
 @mixin sectionTitle($font-size, $color) {
   font-size: $font-size;
@@ -52,4 +55,14 @@ $greyish-brown: #4a4a4a;
   border-radius: 50%;
   background-color: $white;
   // copy pasta ;) -> @include scrollButton;
+}
+
+@mixin linkButton ($backgroundColor,$fontColor) {
+  border-radius: 22.5px;
+  font-size: 20px;
+  font-family: $font-main;
+  font-weight: 500;
+  height: 45px;
+  background-color: $backgroundColor;
+  color: $fontColor;
 }
