@@ -21,10 +21,7 @@
         justify-content: flex-end;
         align-items: center;
         &__title {
-            color: $white;
-            font-family: $font-slab;
-            font-size: 42px;
-            font-weight: bold;
+            @include sectionTitle(42px,$white);
             text-transform: uppercase;
             margin-bottom: 10px;
             &--span {

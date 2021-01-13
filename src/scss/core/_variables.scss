@@ -29,7 +29,9 @@ $greyish-brown: #4a4a4a;
 
   //mixins style
 
-@mixin sectionTitle() {
+@mixin sectionTitle($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
   font-family: $font-slab;
   font-weight: bold;
   // copy pasta ;) -> @include sectionTitle();
