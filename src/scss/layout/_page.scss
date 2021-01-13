@@ -17,9 +17,8 @@
     }
   }
   &--title {
+    @include sectionTitle(30px,$black)
     line-height: 30px;
-    font-family: $font-slab;
-    color: $black;
     text-transform: capitalize;
     @include tablet {
       font-size: 26px;
@@ -176,8 +175,7 @@
     margin: 0;
   }
   &__title {
-    font-family: $font-slab;
-    font-size: 18px;
+    @include sectionTitle(18px,$black)
     line-height: 30px;
     @include tablet {
         font-size: 24px;

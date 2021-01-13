@@ -34,5 +34,12 @@ $greyish-brown: #4a4a4a;
   color: $color;
   font-family: $font-slab;
   font-weight: bold;
-  // copy pasta ;) -> @include sectionTitle();
+  // copy pasta ;) -> @include sectionTitle(,);
+}
+
+@mixin stext($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
+  font-family: $font-main;
+  font-weight: normal;
 }
