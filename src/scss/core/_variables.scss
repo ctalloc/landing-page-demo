@@ -11,7 +11,9 @@ $dark-grey-blue: #304268;
 $black: #000000;
 $greyish-brown: #4a4a4a;
 
-// mixin
+// mixins
+
+  //mixins media queries
 
 @mixin tablet {
     @media screen and (min-width: 768px) {
@@ -25,3 +27,10 @@ $greyish-brown: #4a4a4a;
     }
   }
 
+  //mixins style
+
+@mixin sectionTitle() {
+  font-family: $font-slab;
+  font-weight: bold;
+  // copy pasta ;) -> @include sectionTitle();
+}
