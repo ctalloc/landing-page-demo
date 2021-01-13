@@ -19,7 +19,8 @@ position: relative;
     }
   }
   &--title {
-    @include sectionTitle(30px, $black) line-height: 30px;
+    @include sectionTitle(30px, $black); 
+    line-height: 30px;
     text-transform: capitalize;
     @include tablet {
       font-size: 26px;
@@ -38,7 +39,8 @@ position: relative;
     }
   }
   &__one--button {
-    @include linkButton($white, $orange) width: 76px;
+    @include linkButton($white, $orange);
+    width: 76px;
     margin-top: 30px;
     margin-bottom: 45px;
     border: solid 2px $orange;
@@ -95,7 +97,8 @@ position: relative;
       }
     }
     &--button {
-      @include linkButton($orange, $white) width: 184px;
+      @include linkButton($orange, $white);
+      width: 184px;
       margin-right: auto;
       margin-left: auto;
       border: 0;
@@ -160,14 +163,16 @@ position: relative;
     margin: 0;
   }
   &__title {
-    @include sectionTitle(18px, $black) line-height: 30px;
+    @include sectionTitle(18px, $black); 
+    line-height: 30px;
     @include tablet {
       font-size: 24px;
       margin-bottom: 14px;
     }
   }
   &__text {
-    @include sText(18px, $black) line-height: 30px;
+    @include sText(18px, $black); 
+    line-height: 30px;
     @include tablet {
       font-size: 20px;
     }
