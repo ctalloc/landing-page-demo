@@ -19,7 +19,7 @@ position: relative;
     }
   }
   &--title {
-    @include sectionTitle(30px, $black); 
+    @include sectionTitle(30px, $black);
     line-height: 30px;
     text-transform: capitalize;
     @include tablet {
@@ -37,31 +37,31 @@ position: relative;
       margin-left: auto;
       margin-right: auto;
     }
-  }
-  &__one--button {
-    @include linkButton($white, $orange);
-    width: 76px;
-    margin-top: 30px;
-    margin-bottom: 45px;
-    border: solid 2px $orange;
-    &:hover {
-      transition: 0.3s;
-      background-color: $orange;
-      color: $white;
-      transform: scale(1.1);
+    &--button {
+      @include linkButton($white, $orange);
+      width: 76px;
+      margin-top: 30px;
+      margin-bottom: 45px;
+      border: solid 2px $orange;
+      &:hover {
+        transition: 0.3s;
+        background-color: $orange;
+        color: $white;
+        transform: scale(1.1);
+      }
+      @include tablet {
+        width: 91px;
+        margin-bottom: 60px;
+      }
+      @include desktop {
+        width: 160px;
+      }
     }
-    @include tablet {
-      width: 91px;
-      margin-bottom: 60px;
-    }
-    @include desktop {
-      width: 160px;
-    }
-  }
-  &__one--title {
-    margin-top: 1px;
-    @include tablet {
-      margin-top: 0px;
+    &--title {
+      margin-top: 1px;
+      @include tablet {
+        margin-top: 0px;
+      }
     }
   }
   &--subtitle {
@@ -102,6 +102,7 @@ position: relative;
       margin-right: auto;
       margin-left: auto;
       border: 0;
+      text-transform: capitalize;
       &:hover {
         transition: 0.3s;
         background-color: $white;
@@ -110,12 +111,12 @@ position: relative;
         transform: scale(1.07);
       }
       @include tablet {
-        width: 255px;
+        width: 210px;
         margin-top: 60px;
         margin-bottom: 60px;
       }
       @include desktop {
-        margin-top: 60px;
+        width: 255px;
       }
     }
   }
@@ -134,21 +135,13 @@ position: relative;
     grid-template-rows: 150px 1fr 165px;
   }
   &__item1 {
-    grid-row: span 1;
     @include tablet {
       grid-column: span 3;
     }
   }
-  .article {
-    grid-row: span 1;
-    @include tablet {
-      grid-column: span 1;
-    }
-  }
   &__item5 {
-    grid-row: span 1;
     @include tablet {
-      grid-column: 1 / 4;
+      grid-column: span 3;
     }
   }
 }
@@ -163,7 +156,7 @@ position: relative;
     margin: 0;
   }
   &__title {
-    @include sectionTitle(18px, $black); 
+    @include sectionTitle(18px, $black);
     line-height: 30px;
     @include tablet {
       font-size: 24px;
@@ -171,7 +164,7 @@ position: relative;
     }
   }
   &__text {
-    @include sText(18px, $black); 
+    @include sText(18px, $black);
     line-height: 30px;
     @include tablet {
       font-size: 20px;

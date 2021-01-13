@@ -12,15 +12,15 @@ También he utilizado los materiales didácticos proporcionados por Adalab así 
 
 A lo largo del primer módulo hemos adquirido una serie de conocimientos que he tratado de demostrar en este proyecto. 
 
-En primer lugar, la correcta maquetación de una página web utilizando html y css. En este proyecto, los primeros pasos han consistido en observar el modelo en Zeplin proporcionado por Adalab en el pdf del enunciado y crear el contenido html con una semántica correcta. A continuación he tratado de aplicar estilos a este contenido en css.
+En primer lugar, la correcta maquetación de una página web utilizando html y css. En este proyecto, los primeros pasos han consistido en observar el modelo en Zeplin proporcionado por Adalab en el pdf del enunciado y crear el contenido html con una semántica correcta. A continuación he tratado de aplicar estilos a este contenido en css y aplicar algunas técnicas requeridas en el enunciado como maquetación grid y flexbos.
 
 Algunas cosas más que hemos aprendido y que he tratado de aplicar en el proyecto han sido, por orden:
--utilización de variables SCSS
--anidamiento de estilos con SCSS
--transiciones y animaciones con CSS
--parciales de SCSS y html
--trabajo en ramas con github
--mixins
+- utilización de variables SCSS
+- anidamiento de estilos con SCSS
+- transiciones y animaciones con CSS
+- parciales de SCSS y html
+- trabajo en ramas con github
+- mixins
 
 **Conclusiones personales**
 

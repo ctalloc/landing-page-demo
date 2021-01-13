@@ -49,6 +49,9 @@
             @include scrollButton;
             padding-top: 4px;
             margin-bottom: 53px;
+            @include tablet {
+                margin-bottom: 45px;
+            }
             @include desktop {
                 margin-bottom: 13px;
             }
